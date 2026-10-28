@@ -1,0 +1,6 @@
+{
+  "name": "Happy - Control de Ventas de Sándwiches",
+  "description": "Sistema de punto de venta (POS) y control de ventas diarias, ganancias netas y métodos de pago para sándwiches Happy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Print styles for thermal ticket receipt */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .bg-white.rounded-2xl.max-w-sm,
+  .bg-white.rounded-2xl.max-w-sm * {
+    visibility: visible;
+  }
+  .bg-white.rounded-2xl.max-w-sm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  button {
+    display: none !important;
+  }
+}
+
+/* Custom scrollbar for sales list */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
